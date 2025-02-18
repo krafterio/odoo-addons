@@ -25,6 +25,7 @@
             ('before', 'web/static/src/**/*.variables.scss', 'minimal_backend_theme/static/src/**/*.variables.scss'),
         ],
         'web.assets_backend': [
+            'minimal_backend_theme/static/src/components/**/*',
             'minimal_backend_theme/static/src/webclient/**/*',
         ],
     },
