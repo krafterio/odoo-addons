@@ -33,7 +33,6 @@ export class MenuState {
 
     menuIsActivated(menu) {
         menu = typeof menu === 'number' ? this.menuService.getMenu(menu) : menu;
-        console.log(this.activeIds);
 
         if (typeof menu === 'object') {
             if (this.activeIds.includes(menu.id)) {
