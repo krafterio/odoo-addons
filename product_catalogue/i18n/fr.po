@@ -1,0 +1,44 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_catalogue
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-02 10:01+0000\n"
+"PO-Revision-Date: 2025-06-02 12:02+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: product_catalogue
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_attributes
+msgid "Attributes"
+msgstr "Attributs"
+
+#. module: product_catalogue
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_root
+msgid "Catalogue"
+msgstr "Catalogue"
+
+#. module: product_catalogue
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_categories
+msgid "Product categories"
+msgstr "Catégories de produit"
+
+#. module: product_catalogue
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_product_variants
+msgid "Product variants"
+msgstr "Produits (variants)"
+
+#. module: product_catalogue
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_products
+#: model:ir.ui.menu,name:product_catalogue.product_catalogue_products_root
+msgid "Products"
+msgstr "Produits"

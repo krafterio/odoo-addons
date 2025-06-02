@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <menuitem
+        id="product_catalogue_root"
+        name="Catalogue"
+        sequence="2"
+        web_icon="product_catalogue,static/description/icon.png"
+    />
+
+    <menuitem
+        id="product_catalogue_products_root"
+        name="Products"
+        sequence="0"
+        parent="product_catalogue.product_catalogue_root"
+    />
+
+    <menuitem
+        id="product_catalogue_products"
+        name="Products"
+        sequence="0"
+        parent="product_catalogue.product_catalogue_products_root"
+        action="product.product_template_action_all"
+    />
+
+    <menuitem
+        id="product_catalogue_product_variants"
+        name="Product variants"
+        sequence="1"
+        parent="product_catalogue.product_catalogue_products_root"
+        action="product.product_normal_action"
+        groups="product.group_product_variant"
+    />
+
+    <menuitem
+        id="product_catalogue_categories"
+        name="Product categories"
+        sequence="1"
+        parent="product_catalogue.product_catalogue_root"
+        action="product.product_category_action_form"
+    />
+
+    <menuitem
+        id="product_catalogue_attributes"
+        name="Attributes"
+        sequence="2"
+        parent="product_catalogue.product_catalogue_root"
+        action="product.attribute_action"
+        groups="product.group_product_variant"
+    />
+
+</odoo>
