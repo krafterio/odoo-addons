@@ -51,9 +51,11 @@
 
     <t t-name="minimal_backend_theme.OverlayMenu.Menu.Item">
         <a
+            role="option"
+            t-att-id="'overlay_menu_item_' + app_index"
             t-att-class="{'o_overlay_menu--item': true, 'o_overlay_menu--item-focused': state.focusedIndex === app_index}"
             t-att-data-menu-xmlid="menu.xmlid"
-            t-att-href="('#menu_id='+menu.id+'&amp;action_id='+menu.actionID)"
+            t-att-href="menu.actionPath ? '/odoo/' + menu.actionPath : ('#menu_id='+menu.id+'&amp;action_id='+menu.actionID)"
             t-att-aria-selected="state.focusedIndex === app_index ? 'true' : 'false'"
             t-on-click.prevent="() => this.selectMenu(menu)"
         >
